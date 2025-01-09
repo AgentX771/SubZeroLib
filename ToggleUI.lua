@@ -73,7 +73,7 @@ t.BorderColor3 = Color3.fromRGB(0, 0, 0)
 t.BorderSizePixel = 0
 t.Position = UDim2.new(-2.17982702e-07, 0, 0, 0)
 t.Size = UDim2.new(0, 60, 0, 60)
-t.Image = "http://www.roblox.com/asset/?id=116251944493334"
+t.Image = "http://www.roblox.com/asset/?id=130268650411331"
 u.Parent = t
 v.Name = "Top"
 v.Parent = r
@@ -173,7 +173,7 @@ B.BackgroundTransparency = 1
 B.BorderColor3 = Color3.fromRGB(0, 0, 0)
 B.BorderSizePixel = 0
 B.Size = UDim2.new(0, 50, 0, 51)
-B.Image = "rbxassetid://135143553823678"
+B.Image = "rbxassetid://101572994452537"
 C.Parent = B
 D.Name = "Close"
 D.Parent = y
