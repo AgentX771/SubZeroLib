@@ -13,6 +13,10 @@ contact Uniqua.
 --// GLOBALS \\--
 local TweenService = game:GetService('TweenService');
 
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "AlertScreenGui"
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
 --// CONST \\--
 local RightDistance = 6;
 local BotDistance = 3;
