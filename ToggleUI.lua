@@ -149,7 +149,7 @@ z.TextColor3 = Color3.fromRGB(165, 165, 165)
 z.TextSize = 18
 z.MouseButton1Click:Connect(
     function()
-        setclipboard("https://discord.gg/yZTduXkhMn")
+        setclipboard("https://discord.gg/BAusFJFdeg")
         z.Text = "Copied!"
         wait(2)
         z.Text = "Join Discord"
