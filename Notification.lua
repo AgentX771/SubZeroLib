@@ -47,7 +47,7 @@ do
     Dummy.Position = UDim2.new(1, 0, 1, -30)
     Dummy.BorderSizePixel = 0
     Dummy.BackgroundTransparency = 1
-    Dummy.ZIndex = 10
+    Dummy.ZIndex = 99999999999
 
     local Underline = Dummy:Clone()
     Underline.Name = 'Underline'
@@ -57,7 +57,7 @@ do
     Underline.Size = UDim2.new(0, 0, 0.06, 0)
     Underline.Rotation = 180
     Underline.ImageRectSize = Vector2.new(200, 120)
-    Underline.ZIndex = 11
+    Underline.ZIndex = 99999999999
 end
 
 local DarkerColor = function(Color, DecreaseValue)
@@ -80,9 +80,9 @@ local function M_ToastAlert(Parent, Settings)
     Notifications[Parent] = Online
 
     local Alert = Dummy:Clone()
-    Alert.ZIndex = 10
+    Alert.ZIndex = 99999999999
     local Underline = Alert.Underline
-    Underline.ZIndex = 11
+    Underline.ZIndex = 99999999999
     local Last = Online[#Online] or Alert
 
     Alert.Parent = Parent
@@ -102,7 +102,7 @@ local function M_ToastAlert(Parent, Settings)
         Icon.AnchorPoint = Vector2.new(0, 0.5)
         local Size = Alert.Size.Y.Offset - Icon.Position.X.Offset * 2
         Icon.Size = UDim2.new(0, Size, 0, Size)
-        Icon.ZIndex = 11
+        Icon.ZIndex = 99999999999
         StartXOffset = TextDistance * 2 + Size
     end
 
@@ -117,7 +117,7 @@ local function M_ToastAlert(Parent, Settings)
         Title.TextSize = Settings.TitleSize or 13
         Title.Size = UDim2.new(0, XSize, 0, Title.TextSize)
         Title.Position = UDim2.new(0, StartXOffset, 0, TextDistance - 5)
-        Title.ZIndex = 11
+        Title.ZIndex = 99999999999
     end
 
     local Text = Instance.new('TextLabel', Alert)
@@ -129,7 +129,7 @@ local function M_ToastAlert(Parent, Settings)
     Text.TextColor3 = TextColor
     Text.AnchorPoint = Vector2.new(0, 0)
     Text.Text = TextText
-    Text.ZIndex = 11
+    Text.ZIndex = 99999999999
     if Title then
         local y = -(Text.TextSize + TextDistance)
         Text.Size = UDim2.new(0, XSize, 0, Alert.AbsoluteSize.Y + y - TextDistance)
