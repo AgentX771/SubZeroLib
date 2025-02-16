@@ -1,1 +1,1 @@
-local Blacklist = {"thevinhctvn372013", ""}
+local Blacklist = {"thevinhctvn372013", "ZxxxZ2442"}
